@@ -8,15 +8,11 @@ namespace ConsoleApp1
 {
     class Program
     {
-        private static string fullName;
 
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Week2");
-
             Console.Write("Task 1 - Please enter your name: ");
-
-
             string name = Console.ReadLine();
 
 
@@ -54,7 +50,7 @@ namespace ConsoleApp1
             Console.Clear();
 
 
-            Console.WriteLine("Task 3 - Please enter a number: ");
+            Console.WriteLine("Task 2 - Please enter a number: ");
 
             int num1 = int.Parse(Console.ReadLine());
 
@@ -81,12 +77,15 @@ namespace ConsoleApp1
             Console.Clear();
 
             Console.Write("Task 3 - Please enter your first name: ");
-
             string fname = Console.ReadLine();
 
             Console.Write("Please enter your second name: ");
+            string lname = Console.ReadLine();
 
-            Console.WriteLine("Hello " + fullName);//concantination
+            string fullname = fname + " " + lname;
+            Console.WriteLine("Hello" + fullname);
+
+            
 
             Console.WriteLine("Task 3 complete - Press enter to exit the application...");
 
